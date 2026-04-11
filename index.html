@@ -15,16 +15,36 @@
     <!-- HEADER -->
     <header class="bg-white shadow-md fixed w-full z-50">
       <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+        class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center"
       >
         <div class="flex items-center gap-3">
           <img
             src="/Logo.png"
             onclick="scrollToTop()"
-            class="h-10 object-contain cursor-pointer"
+            class="h-14 object-contain cursor-pointer"
             alt="Vedha Logo"
           />
           <!-- <h1 class="text-xl font-bold text-gray-800">Vedha Enterprises</h1> -->
+        </div>
+        <div class="flex gap-3.5 md:hidden">
+          <a
+            href="https://www.instagram.com/vedha.enterprises_"
+            target="_blank"
+            class="text-[#C13584]"
+            ><i class="fab fa-instagram text-2xl"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/share/1EMVxt53E5/"
+            target="_blank"
+            class="text-[#1877F2]"
+            ><i class="fab fa-facebook text-2xl"></i
+          ></a>
+          <a
+            href="https://wa.me/919979988610"
+            target="_blank"
+            class="text-[#25D366]"
+            ><i class="fab fa-whatsapp text-2xl"></i
+          ></a>
         </div>
         <nav class="space-x-6 hidden md:block">
           <a href="#home" class="hover:text-blue-700">Home</a>
@@ -41,7 +61,7 @@
         class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center"
       >
         <div>
-          <h2 class="text-4xl font-bold mb-6 text-gray-800">
+          <h2 class="text-4xl font-bold mt-9 mb-6 text-gray-800">
             Fast & Trusted Loan Services
           </h2>
           <p class="mb-6 text-gray-600">
@@ -55,7 +75,7 @@
         </div>
         <img
           src="https://images.unsplash.com/photo-1560518883-ce09059eeffa"
-          class="rounded-2xl shadow-lg"
+          class="rounded-2xl shadow-lg hover:shadow-xl"
         />
       </div>
     </section>
@@ -66,7 +86,7 @@
         <h2 class="text-3xl font-bold mb-10 text-gray-800">Our Services</h2>
         <div class="grid md:grid-cols-3 gap-8">
           <div
-            class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition border-t-4 border-[#f4a300]"
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition bg-[#f4a30012]"
           >
             <i class="fa-solid fa-house text-3xl text-[#2c4aa3] mb-4"></i>
             <h3 class="text-xl font-semibold mb-3">Home Loan</h3>
@@ -74,7 +94,7 @@
           </div>
 
           <div
-            class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition border-t-4 border-[#f4a300]"
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition bg-[#f4a30012]"
           >
             <i class="fa-solid fa-briefcase text-3xl text-[#2c4aa3] mb-4"></i>
             <h3 class="text-xl font-semibold mb-3">Business Loan</h3>
@@ -82,7 +102,7 @@
           </div>
 
           <div
-            class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition border-t-4 border-[#f4a300]"
+            class="p-6 rounded-2xl shadow hover:shadow-xl transition bg-[#f4a30012]"
           >
             <i class="fa-solid fa-user text-3xl text-[#2c4aa3] mb-4"></i>
             <h3 class="text-xl font-semibold mb-3">Personal Loan</h3>
@@ -135,59 +155,77 @@
         src="https://maps.google.com/maps?q=Yogi%20Chowk%20Surat&t=&z=13&ie=UTF8&iwloc=&output=embed"
         width="100%"
         height="300"
+        class="h-[200px] md:h-[300px]"
       ></iframe>
     </section>
 
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-white pt-12 pb-6">
-      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
-        <div>
-          <img src="/Logo.png" class="h-12 mb-4" />
-          <p class="text-sm text-gray-300">
-            Trusted loan consultancy for Home, Business & Personal Loans.
-          </p>
-        </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- TOP GRID -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left"
+        >
+          <!-- BRAND -->
+          <div class="flex flex-col items-center md:items-start">
+            <img src="/Logo.png" class="h-12 mb-4" />
+            <p class="text-sm text-gray-300 max-w-xs">
+              Trusted loan consultancy for Home, Business & Personal Loans.
+            </p>
+          </div>
 
-        <div>
-          <h3 class="font-semibold mb-4">Quick Links</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+          <!-- MOBILE: LINKS + SERVICES SIDE BY SIDE -->
+          <div class="grid grid-cols-2 gap-6 md:contents">
+            <!-- QUICK LINKS -->
+            <div>
+              <h3 class="font-semibold mb-4">Quick Links</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
 
-        <div>
-          <h3 class="font-semibold mb-4">Services</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li>Home Loan</li>
-            <li>Business Loan</li>
-            <li>Personal Loan</li>
-          </ul>
-        </div>
+            <!-- SERVICES -->
+            <div>
+              <h3 class="font-semibold mb-4">Services</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li>Home Loan</li>
+                <li>Business Loan</li>
+                <li>Personal Loan</li>
+              </ul>
+            </div>
+          </div>
 
-        <div>
-          <h3 class="font-semibold mb-4">Follow Us</h3>
-          <div class="flex gap-4 text-xl">
-            <a
-              href="https://www.instagram.com/vedha.enterprises_"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com/share/1EMVxt53E5/" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://wa.me/919979988610" target="_blank"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
+          <!-- FOLLOW US -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="font-semibold mb-4">Follow Us</h3>
+            <div class="flex gap-4 text-xl">
+              <a
+                href="https://www.instagram.com/vedha.enterprises_"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1EMVxt53E5/"
+                target="_blank"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://wa.me/919979988610" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        class="text-center text-gray-400 text-sm mt-10 border-t border-gray-700 pt-4"
-      >
-        © 2026 Vedha Enterprises. All rights reserved.
+        <!-- BOTTOM -->
+        <div
+          class="text-center text-gray-400 text-sm mt-10 border-t border-gray-700 pt-4"
+        >
+          © 2026 Vedha Enterprises. All rights reserved.
+        </div>
       </div>
     </footer>
 
